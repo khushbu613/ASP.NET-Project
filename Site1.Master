@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Cosmetics_Project.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CS Page</title>
+    
+    <style type="text/css">
+        .style1
+        {
+            height: 152px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div align="left">
+        <table style="width: 100%;">
+            <tr>
+                <td align="left" class="style1">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                    &nbsp;
+                    <asp:Image ID="Image1" runat="server" Height="383px" 
+                        ImageUrl="~/images/BeautyCosmeticsLogo.jpg" Width="638px" />
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink 
+                        ID="HyperLink1" runat="server" Font-Bold="True" Font-Size="15pt" 
+                        ForeColor="#990099" NavigateUrl="~/Home.aspx" Target="_blank">Home</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" Font-Size="15pt" 
+                        ForeColor="#990099" NavigateUrl="~/Login_form.aspx" Target="_blank">Login</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" Font-Size="15pt" 
+                        ForeColor="#990099" NavigateUrl="~/About_us.aspx" Target="_blank">About Us</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" Font-Size="15pt" 
+                        ForeColor="#990099" NavigateUrl="~/Contact_Us.aspx" Target="_blank">Contact Us</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" Font-Size="15pt" 
+                        ForeColor="#990099" NavigateUrl="~/Logout.aspx" Target="_blank">Logout</asp:HyperLink>
+                        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    &nbsp;
+                    <asp:Label ID="Label2" runat="server" Text="You have product in your cart" 
+                        Font-Bold="True" Font-Size="13pt" ForeColor="#009933"></asp:Label>&nbsp;&nbsp; 
+    <asp:Label ID="Label1" runat="server" ForeColor="#003300" Font-Bold="True" 
+            Font-Size="15pt"></asp:Label>     
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
+    <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" 
+            Font-Size="15pt" 
+            NavigateUrl="~/Addtocartmaybelline.aspx" ImageUrl="~/images/cropimage9.jpg">Show cart</asp:HyperLink>
+                    <br />
+
+&nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td align="justify" bgcolor="Black" style="color: #FFFFFF">
+                    &nbsp;
+                    &nbsp;&nbsp; &nbsp;&nbsp; 
+                    @Copyrights All Rights Reserved || Designed &amp; Developed By Khushbu GulabChand 
+                    Gupta..............</td>
+            </tr>
+            </table>
+       
+    </div>
+    </form>
+</body>
+</html>
